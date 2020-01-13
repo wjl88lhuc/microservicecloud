@@ -19,6 +19,7 @@
         <module>microservicecloud-consumer-dept-feign</module>
         <module>microservicecloud-provider-dept-hystrix-8001</module>
         <module>microservicecloud-consumer-hystrix-dashboard</module>
+        <module>microservicecloud-zuul-gateway-9527</module>
     </modules>
     <packaging>pom</packaging>
 
@@ -73,6 +74,16 @@
             <dependency>
                 <groupId>org.springframework.cloud</groupId>
                 <artifactId>spring-cloud-starter-netflix-hystrix</artifactId>
+                <version>1.4.7.RELEASE</version>
+            </dependency>
+            <dependency>
+                <groupId>org.springframework.cloud</groupId>
+                <artifactId>spring-cloud-starter-zuul</artifactId>
+                <version>1.4.7.RELEASE</version>
+            </dependency>
+            <dependency>
+                <groupId>org.springframework.cloud</groupId>
+                <artifactId>spring-cloud-starter-config</artifactId>
                 <version>1.4.7.RELEASE</version>
             </dependency>
             <dependency>
